@@ -1,0 +1,284 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3414620699893499857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3414620699893499871}
+  - component: {fileID: 3414620699893499870}
+  - component: {fileID: 3414620699893499868}
+  - component: {fileID: 3414620699893499869}
+  - component: {fileID: 3414620699893499866}
+  - component: {fileID: 163290589}
+  - component: {fileID: 163290590}
+  - component: {fileID: 163290591}
+  - component: {fileID: 163290592}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3414620699893499871
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3414620699893499857}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3414620699893499870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3414620699893499857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1756101628331f441a2a288eb29ad9be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Map1: {fileID: 0}
+  Map2: {fileID: 0}
+  Mana: 50
+  ManaUI: {fileID: 0}
+  InfoPanel: {fileID: 0}
+  ManaUIFillColor: {r: 0, g: 0.30731416, b: 0.9245283, a: 1}
+  ManaUIEmptyColor: {r: 0, g: 0.30731416, b: 0.9245283, a: 0.39215687}
+  m_CurrentAbility: 0
+--- !u!114 &3414620699893499868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3414620699893499857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d1585bd80a5ff84ca01e24cb9ce36a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ManaCost: 10
+  m_TeleportEffect: {fileID: 0}
+  m_TeleportEffectWall: {fileID: 0}
+  MaxVignette: 0.15
+  MinSaturation: -85
+  PPDamp: 2
+  BlinkFov: 85
+  SphereCastRadius: 0
+  NormalMultFactor: 0
+  ScalingWallOffset: 0.8
+  CheckSpaceRadius: 1
+  _debugGizmoSphereRadius: 0.05
+  _capsuleDrawNumPoints: 6
+  _sphereCastDrawNumPoints: 10
+  m_DebugDistanceToBlinkPoint: 0
+  m_DebugBlinkTime: 0
+  m_DebugIsScaling: 0
+  m_DebugRayDistance: 0
+  m_PreBlinking: 0
+  DebugSphereCast: 0
+  DebugCheckSpaceCapsule: 1
+  DebugPoints: 1
+--- !u!114 &3414620699893499869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3414620699893499857}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 606dc7020d2898b42ac2aa14ba89350c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinSaturation: -75
+  TravelFov: 85
+  MaxVignette: 0.3
+  TravelTime: 0.75
+  EffectsCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &3414620699893499866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3414620699893499857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd60da9e28182184c8f70ba8ec4654f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &163290589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3414620699893499857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f371cfe9cd1ba42833e8a513c850d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &163290590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3414620699893499857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2abd31d0bbf75348acf645cfa6cc1c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlinkSettings:
+    Name: Emily
+    MinBlinkDistance: 0.1
+    MaxBlinkDistance: 10
+    MinBlinkTime: 0.25
+    MaxBlinkTime: 0.5
+    FovCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+--- !u!114 &163290591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3414620699893499857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7946210b39e48428099ec0327a975b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlinkSettings:
+    Name: Daud
+    MinBlinkDistance: 0.1
+    MaxBlinkDistance: 10
+    MinBlinkTime: 0.05
+    MaxBlinkTime: 0.05
+    FovCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+--- !u!114 &163290592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3414620699893499857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da12c7286046214f92d37f12674a844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlinkSettings:
+    Name: Corvo
+    MinBlinkDistance: 0.1
+    MaxBlinkDistance: 10
+    MinBlinkTime: 0.15
+    MaxBlinkTime: 0.3
+    FovCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
